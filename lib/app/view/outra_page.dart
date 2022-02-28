@@ -62,7 +62,7 @@ class Outra extends StatelessWidget {
                   onPressed: () {
                     Get.changeTheme(ThemeData.dark());
                   },
-                  child: Text("Trocar de tela Get.offAll(HomePage())"),
+                  child: Text("Trocar de tema"),
                 ),
               ),
             ],
