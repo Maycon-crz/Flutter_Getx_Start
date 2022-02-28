@@ -18,7 +18,6 @@ class Outra extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     Get.back();
-                    Get.changeTheme(ThemeData.dark());
                   },
                   child: Text("Voltar usando Get.back()"),
                 ),
@@ -54,7 +53,17 @@ class Outra extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
+                //Pegando nome dentro de um controller instanciado lá em cima
                 child: Text("Nome: ${controllerOutra.nome}"),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton(
+                  onPressed: () {
+                    Get.changeTheme(ThemeData.dark());
+                  },
+                  child: Text("Trocar de tela Get.offAll(HomePage())"),
+                ),
               ),
             ],
           ),
