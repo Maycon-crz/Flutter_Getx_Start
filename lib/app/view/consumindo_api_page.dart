@@ -9,7 +9,7 @@ class ConsumindoApi extends GetView<PostsController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('GetConnection Tutprial'),
+        title: Text('GetConnection Tutorial'),
       ),
       body: Obx(() {
         if (controllerApi.loading.value == true) {
