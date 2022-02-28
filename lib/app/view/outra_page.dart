@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'dart:ui' as ui;
 import '../controller/home_controller.dart';
 import '../controller/outra_controller.dart';
 import 'home_page.dart';
@@ -7,7 +8,7 @@ import 'home_page.dart';
 class Outra extends StatelessWidget {
   final Controller c = Get.find();
   final ControllerOutra controllerOutra = Get.put(ControllerOutra());
-
+  final local = locale: Get.deviceLocale;
   @override
   Widget build(context) => Scaffold(
         body: Center(
@@ -58,7 +59,7 @@ class Outra extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("Localidade do sistema operacional: ${locale: Get.deviceLocale,}"),
+child: Text("Localidade do sistema operacional: ${locale: Get.deviceLocale,}"),
               ),
               
             ],
