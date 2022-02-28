@@ -56,6 +56,11 @@ class Outra extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Text("Nome: ${controllerOutra.nome}"),
               ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Localidade do sistema operacional: ${locale: Get.deviceLocale,}"),
+              ),
+              
             ],
           ),
         ),
