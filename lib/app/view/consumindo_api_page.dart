@@ -12,16 +12,16 @@ class ConsumindoApi extends GetView<PostsController> {
         title: Text('GetConnection Tutprial'),
       ),
       body: Obx(() {
-        return Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'Tutorial GetConnect',
-              ),
-            ],
-          ),
-        );
+        if (controllerApi.loading.value == true) {
+          return Center(
+            child: CircularProgressIndicator(),
+          );
+        }
+        return ListView.builder(itemBuilder: (context, index) {
+          return ListTile(
+            title: Text('${controllerApi.postsList[index].title}'),
+          );
+        });
       }),
     );
   }
