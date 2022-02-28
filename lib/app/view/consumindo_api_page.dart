@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import '../controller/post_controller.dart';
 
-class ConsumindoApi extends StatelessWidget {
+class ConsumindoApi extends GetView<PostsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
