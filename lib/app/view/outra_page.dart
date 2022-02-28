@@ -7,6 +7,7 @@ import 'home_page.dart';
 class Outra extends StatelessWidget {
   final Controller c = Get.find();
   final ControllerOutra controllerOutra = Get.put(ControllerOutra());
+  Get.changeTheme(ThemeData.light());
   @override
   Widget build(context) => Scaffold(
         body: Center(
