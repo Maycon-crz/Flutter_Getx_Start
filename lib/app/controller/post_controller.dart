@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import '../model/post_provider.dart';
 import '../model/post_repository.dart';
+import '../model/post_model.dart';
 
 class PostsController extends GetxController {
   final postsRepository = Get.put(PostsRepository(PostsProvider()));
