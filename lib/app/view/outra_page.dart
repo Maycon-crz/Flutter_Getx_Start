@@ -18,7 +18,7 @@ class Outra extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     Get.back();
-                    Get.changeTheme(ThemeData.light());
+                    Get.changeTheme(ThemeData.dark());
                   },
                   child: Text("Voltar usando Get.back()"),
                 ),
