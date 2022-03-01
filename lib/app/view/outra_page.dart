@@ -7,7 +7,6 @@ import 'home_page.dart';
 class Outra extends StatelessWidget {
   final Controller c = Get.find();
   final ControllerOutra controllerOutra = Get.put(ControllerOutra());
-
   @override
   Widget build(context) => Scaffold(
         body: Center(
@@ -54,6 +53,7 @@ class Outra extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
+                //Pegando nome dentro de um controller instanciado lá em cima
                 child: Text("Nome: ${controllerOutra.nome}"),
               ),
             ],
