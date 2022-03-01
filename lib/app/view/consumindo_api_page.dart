@@ -17,11 +17,13 @@ class ConsumindoApi extends GetView<PostsController> {
             child: CircularProgressIndicator(),
           );
         }
-        return ListView.builder(itemBuilder: (context, index) {
-          return ListTile(
-            title: Text('${controllerApi.postsList[index].title}'),
-          );
-        });
+        return ListView.builder(
+            itemCount: controllerApi.postsList.length,
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: Text('${controllerApi.postsList[index].title}'),
+              );
+            });
       }),
     );
   }
